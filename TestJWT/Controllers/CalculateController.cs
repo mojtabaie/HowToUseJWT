@@ -11,7 +11,8 @@ namespace TestJWT.Controllers
         [HttpPost]
         public IActionResult Sum([FromForm] int num1, [FromForm] int num2)
         {
-            return Ok(num1+num2);
+            var result = num1 + num2;
+            return Ok(result);
         }
     }
 }
